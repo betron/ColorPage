@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20140223180704) do
 
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension "postgresql"
 
   create_table "colors", force: true do |t|
     t.integer "red"
