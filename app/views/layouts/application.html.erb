@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ColorPage</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1><%= link_to "Color Page", root_path %></h1>
+<%= yield %>
+<div class="footer">
+<footer><a href="https://twitter.com/s_d_br0_o">s_d_br0_0</a></footer></div>
+
+</body>
+</html>

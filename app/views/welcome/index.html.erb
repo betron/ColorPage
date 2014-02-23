@@ -1,0 +1,28 @@
+<!-- index.html.erb -->
+
+<div class="body">
+<div class ="panel1"style="background-color:rgba(<%= @panel1.red%>, <%= @panel1.green %>, <%= @panel1.blue %>, <%= rand() %>);width:<%= rand(100) %>%; position: fixed;left:<%= rand(100)%>%"> 
+  <% rand(120).times {%><br /><%}  %>
+
+</div>
+  
+  
+  <div class="panel2"style="background-color:rgba(<%= @panel2.red%>, <%= @panel2.green %>, <%= @panel2.blue %>, <%= rand() %>);width:<%= rand(100) %>%;position:fixed; right:<%= -rand(25)%>%">
+    <% rand(60).times {%><br /><%}  %>
+</div>
+  
+  <div class="circle1"style="background-color:rgba(<%= @circle1.red%>, <%= @circle1.green %>, <%= @circle1.blue %>, <%= rand() %>);position:fixed; right:<%= -rand(25)%>;<% w_h = rand(60) %>;height:<%= w_h %>%;width:<%= w_h %>%;"><% rand(60).times {%><br /><%}  %>
+  </div>
+
+  <div class="circle"style="width: <%= num = rand(250) %>px;
+  height: <%= num %>px;
+  border-radius: 100%;
+  background-color: rgba(<%= rand(255) %>, <%= rand(255) %>, <%= rand(255) %>, <%= rand() %>);
+  position: fixed; 
+  left:<%= rand(100) %>%;
+  top:<%= rand(100) %>%;"></div>
+
+  
+</div>
+
+
