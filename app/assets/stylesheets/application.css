@@ -14,9 +14,47 @@
 
 /*
 require animate*/
+.header {
+  position: relative;
+  top: 0;
+}
+.header h1 ul {
+  display: inline;
+}
 .footer {
   position: fixed;
+  left: 0;
   bottom: 0;
   font-size: 8px;
   text-align: right;
 }
+
+/*div .circle {
+  animation:myfirst 5s linear 0.3s 3;
+  -webkit-animation:myfirst .2s linear 0.3s 3;
+
+  animation:mysecond 10s 2s .3s 3;
+  -webkit-animation:mysecond 10s linear .3s 3;
+
+}
+
+@keyframes myfirst
+{
+/*from {background:red;}*/
+/*to {width:0%}
+}*/
+
+/*@-webkit-keyframes myfirst  Safari and Chrome 
+{
+to {width:0%}
+}
+*/
+/*@keyframes mysecond
+{
+to {left: 0%;}
+}*/
+
+/*@-webkit-keyframes mysecond
+{
+  to {height: 0%;}
+}*/

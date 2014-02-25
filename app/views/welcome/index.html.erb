@@ -1,5 +1,8 @@
 <!-- index.html.erb -->
-
+<div class="header">
+<h1><ul>
+  <li><%= link_to "Color Page", root_path %></li>
+  <li><%= link_to "More", more_path %></li></ul></h1></div>
 <div class="body">
 <div class ="panel1"style="background-color:rgba(<%= @panel1.red%>, <%= @panel1.green %>, <%= @panel1.blue %>, <%= rand() %>);width:<%= rand(100) %>%; position: fixed;left:<%= rand(100)%>%"> 
   <% rand(120).times {%><br /><%}  %>

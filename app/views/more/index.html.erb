@@ -1,0 +1,23 @@
+<!-- index.html.erb -->
+<body>
+<div class="header">
+<h1><ul>
+  <li><%= link_to "Color Page", more_path %></li>
+  <li><%= link_to "More", root_path %></li></ul></h1></header>
+
+
+<% rand(800).times do %>
+  <div class="square"style="width: <%= rand(250) %>px;
+  height: <%= (4) %>px;
+  background-color: rgba(<%= rand(255) %>, <%= rand(255) %>, <%= rand(255) %>, <%= rand() %>);
+  position: fixed; 
+  left:<%= rand(100) %>%;
+  top:<%= rand(100) %>%;
+  border-width: 100px 200px 100px 0px;"> </div></div>
+
+<% end %>
+
+
+
+
+</body>
