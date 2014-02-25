@@ -6,16 +6,29 @@
   <li><%= link_to "More", root_path %></li></ul></h1></header>
 
 
-<% rand(800).times do %>
-  <div class="square"style="width: <%= rand(250) %>px;
-  height: <%= (4) %>px;
-  background-color: rgba(<%= rand(255) %>, <%= rand(255) %>, <%= rand(255) %>, <%= rand() %>);
+<% rand(20).times do %>
+  <div class="square"style="width: <%= rand(860) %>px;
+  height: <%= (rand(1640)) %>px;
+  background-color: rgba(<%= rand(255) %>, 0, 0, <%= rand() %>);
   position: fixed; 
   left:<%= rand(100) %>%;
   top:<%= rand(100) %>%;
-  border-width: 100px 200px 100px 0px;"> </div></div>
+  border-width: 100px 200px 100px 0px;
+  z-index: 1;"> </div></div>
 
 <% end %>
+<% rand(128).times do %>
+  <div class="circle"style="width: <%= num = rand(50) %>px;
+    height: <%= num %>px;
+    border-radius: 100%;
+    background-color: rgba(<%= rand(62) %>, 0, <%= rand(255) %>, <%= rand() %>);
+    position: relative; 
+    left:<%= rand(100) %>%;
+    top:<%= rand(100) %>%;
+    z-index: 0;"></div>
+  
+</div>
+  <% end %>
 
 
 
