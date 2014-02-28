@@ -1,4 +1,10 @@
 
+<body>
+<div class="header">
+<h1><ul>
+  <li><%= link_to "Color Page", more_path %></li>
+  <li><%= link_to "More", root_path %></li></ul></h1></header>
+
 <% rand(6).times do %>
 <div class="square"style="width: <%= rand(100) %>%;
   height: <%= (rand(100)) %>%;
@@ -27,3 +33,4 @@
   border-radius: 100%;"> 
 </div>
 </div>
+</body>
