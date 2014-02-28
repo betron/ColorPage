@@ -14,7 +14,9 @@
   left:<%= rand(100) %>%;
   top:<%= rand(100) %>%;
   border-width: 100px 200px 100px 0px;
-  z-index: 1;"> </div></div>
+  z-index: 1;
+  box-shadow: <%=rand(255)%>px <%=rand(100)%>px <%=rand(100)%>px rgba(<%=rand(255)%>, 0, 0,<%= rand() %>);
+  border-radius: <%= rand(12) %>px;"> </div></div>
 
 <% end %>
 <% rand(128).times do %>
@@ -26,7 +28,8 @@
     left:<%= rand(100) %>%;
     top:<%= rand(100) %>%;
     z-index: 0;
-    box-shadow: <%=rand(100)%>px <%=rand(100)%>px <%=rand(100)%>px rgba(<%=rand(255)%>, <%=rand(255)%>, <%=rand(255)%>, <%=rand(255)%>);"></div>
+    box-shadow: <%=rand(100)%>px <%=rand(100)%>px <%=rand(100)%>px rgba(<%=rand(62)%>, 0, <%=rand(100)%>,<%= rand() %>)
+     background-size: cover;"></div>
   
 </div>
   <% end %>

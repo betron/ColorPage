@@ -1,0 +1,29 @@
+
+<% rand(6).times do %>
+<div class="square"style="width: <%= rand(100) %>%;
+  height: <%= (rand(100)) %>%;
+  background-color: rgba(<%= rand(255) %>, <%= rand(255) %>, <%= rand(255) %>, <%= rand() %>);
+  position: fixed; 
+  left:<%= rand(10) %>%;
+  top:<%= rand(100) %>%;
+  border-width: 100px 200px 100px 0px;
+  z-index: <%= rand(1) %>;
+  box-shadow: <%=rand(255)%>px <%=rand(100)%>px <%=rand(100)%>px rgba(<%=rand(255)%>, 0, 0,<%= rand() %>);
+  border-radius: <%= rand(12) %>px;"> 
+</div>
+<% end %>
+</div>
+
+<% num = rand(1200) %>
+<div class="circle"style="width: <%= num %>px;
+  height: <%= num %>px;
+  background-color: rgba(<%= rand(255) %>, <%= rand(255) %>, <%= rand(255) %>, <%= rand() %>);
+  position: fixed; 
+  left:<%= rand(10) %>%;
+  top:<%= rand(100) %>%;
+  border-width: 100px 200px 100px 0px;
+  z-index: <%= rand(2) %>;
+  box-shadow: <%=rand(255)%>px <%=rand(100)%>px <%=rand(100)%>px rgba(<%=rand(255)%>, 0, 0,<%= rand() %>);
+  border-radius: 100%;"> 
+</div>
+</div>
